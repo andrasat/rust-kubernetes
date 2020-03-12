@@ -1,0 +1,5 @@
+secretGenerator:
+  - name: cloud-logging-service-account
+    files:
+      - service-account.json
+      

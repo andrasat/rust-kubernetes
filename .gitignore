@@ -1,0 +1,4 @@
+/target
+**/*.rs.bk
+service-account.json
+secrets*
