@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: rust-kube
+spec:
+  selector:
+    app: rust-kube
+  ports:
+    - protocol: TCP
+      port: 8000

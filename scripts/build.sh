@@ -1,12 +1,12 @@
 #!/bin/bash
 
-run_build () {
+build () {
   echo "Start Build !!";
 
   rm -rf target/
-  docker build -t rust-kube .
+  docker build . -t localhost:53456/rust-kube:latest
 
   echo "Build finish !";
 }
 
-run_build
+build

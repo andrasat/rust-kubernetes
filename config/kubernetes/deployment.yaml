@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rust-kube
+  labels:
+    app: rust-kube
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: rust-kube
+  template:
+    metadata:
+      labels:
+        app: rust-kube
+    spec:
+      containers:
+        - name: rust-kube
+          image: localhost:53456/rust-kube:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8000

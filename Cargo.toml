@@ -13,5 +13,4 @@ opt-level = 1
 opt-level = 3
 
 [dependencies]
-actix-web = "2"
-actix-rt = "1"
+actix-web = "3"
